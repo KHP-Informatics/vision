@@ -41,6 +41,8 @@ TODO - link to presentations
 
 ### Practical 2 - embeddings
 
+We will run this as a demo, not intending people to do it themselves
+
 TODO short demonstration of how to run Python code notebooks, using Colab.
 
 TODO - link to practical colab
