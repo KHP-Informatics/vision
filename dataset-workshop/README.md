@@ -17,7 +17,7 @@
 
 ## Day 2 - NLP tutorial
 
-- This tutorial day will comprise a few talks on NLP toics, and a working example of a simple NLP application.
+- This tutorial day will comprise a few talks on NLP topics, and a working example of a simple NLP application.
 - The practicals will use Python. If you are familiar with Python, you can download the material and use it on your own machine.
 - However, you do not need to do this: all of the Python files can be run in your web browser using [Google Colab](https://colab.research.google.com/), a web-based tool for running Python code. We will provide links for you to open the code in Colab.
 
