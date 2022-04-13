@@ -1,8 +1,8 @@
 # vision
 Code for the VISION project (violence, health and society)
 
-# before using this notebook, you can download your python, jupyter notebook and install them
-# If not, you may use the google service to run the codes: https://colab.research.google.com/ 
+Before using this notebook, you can download your python, jupyter notebook and install them
+If not, you may use the google service to run the codes: https://colab.research.google.com/ 
 
 1. 'test.csv' and 'train.csv' were generated from 'emotional_physical.csv'
 2. 'test2.csv' and 'train2.csv' were genderated from 'potentially_abuse_V2.csv' applied for sentence level classification. If label=1, means certain sentence include words that suggest the existence of violence behavior. label = 0, indicates no violence or not sure whether there exists violence.
