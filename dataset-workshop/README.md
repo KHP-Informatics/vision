@@ -35,6 +35,22 @@ TODO - link to presentations
 - Open the file: [title](./XXXXXX)
 - Read through it, adding a 1 or a 0 in column 1, according to whether you think the sentence mentions violence or not
 
+
+- examples 1 to 800: sample-data-prepared.csv
+- examples 801 - 820 with label removed in sample-data-to-label-1A.csv
+- (each B file is a copy of the A file) sample-data-to-label-1B.csv
+- 821 - 840 sample-data-to-label-2A.csv
+- sample-data-to-label-2B.csv
+- 841 - 860 sample-data-to-label-3A.csv
+- sample-data-to-label-3B.csv
+- 861 - 880 sample-data-to-label-4A.csv
+- sample-data-to-label-4B.csv
+
+- code to calcualate IAAs on the A and B files for each set
+- code to combine all labelled datasets
+- code to do 80:20 split
+
+
 ### Presentations 2 - representing language
 
 TODO - link to presentations
