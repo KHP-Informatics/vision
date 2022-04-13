@@ -1,7 +1,7 @@
 # VISION dataset workshop
 # 26-27 April 2022
 
-## Day 1 - datasets and Measurement Framework
+## Day 1 - Datasets and Measurement Framework
 
 ### Morning
 
