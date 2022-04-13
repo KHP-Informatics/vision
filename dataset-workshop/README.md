@@ -62,6 +62,11 @@ TODO - link to practical colab
 - summary - challenges and opportunities
 TODO - link
 
+### Additional material
+
+- TODO links to whole post classification data and notebook
+- TODO link to topic modelling data and notebook
+
 
 
 ### Old material
