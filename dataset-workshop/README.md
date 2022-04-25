@@ -23,7 +23,11 @@
 
 ### Presentations 1 - introduction to NLP
 
-TODO - link to presentations
+[TODO Introduction](./presentations/XX)
+[NLP methods](./presentations/02-nlp-methods.pdf)
+[Steps in an NLP study, part A](./presentations/03-steps-in-an-nlp-study-A.pdf)
+[Steps in an NLP study, part B](./presentations/04-steps-in-an-nlp-study-B.pdf)
+
 
 ### Practical 1 - data labelling
 
@@ -31,8 +35,8 @@ TODO - link to presentations
 - We will classify sentences from the domestic violence subreddit, as either:
     - mentioning violence (label = 1) or
     - not mentioning violence (label = 0)
-- Our data (sentences) is in a CSV file, which can be opened in Excel, or edited directly in your web browser
-- Open the file: [title](./XXXXXX)
+- Our data (sentences) is in a CSV file, which can be opened in Excel (or edited directly in your web browser if you have a github account)
+- Open the file from the previoulsy downloaded zip file
 - Read through it, adding a 1 or a 0 in column 1, according to whether you think the sentence mentions violence or not
 
 
@@ -50,22 +54,22 @@ TODO - link to presentations
 - code to combine all labelled datasets
 - code to do 80:20 split
 
-
 ### Presentations 2 - representing language
 
-TODO - link to presentations
+[Representing language](./presentations/05-nlp-representation.pdf)
 
 ### Practical 2 - embeddings
 
-We will run this as a demo, not intending people to do it themselves
+We will run this as a demo, you do not need to do it themselvesrun this code yourself
 
 TODO short demonstration of how to run Python code notebooks, using Colab.
 
 TODO - link to practical colab
 
-### Presentations 3 - supervised learning and evaluation
+### Presentations 3 - supervised learning and the development cycle
 
-TODO - link to presentations
+[Classification and sequence learning](06-classification-and-sequence-learning.pdf)
+[Representing languageThe development cycle](07-development-cycle-and-evaluation.pdf)
 
 ### Practical 3 - supervised learning
 
@@ -75,30 +79,6 @@ TODO - code for above
 
 TODO - link to practical colab
 
-### Presentations 4
-
-- summary - challenges and opportunities
-TODO - link
-
-### Additional material
-
-- TODO links to whole post classification data and notebook
-- TODO link to topic modelling data and notebook
+### Concluding abd next steps
 
 
-
-### Old material
-
-1. 'test.csv' and 'train.csv' were generated from 'emotional_physical.csv'
-2. 'test2.csv' and 'train2.csv' were genderated from 'potentially_abuse_V2.csv' applied for sentence level classification. If label=1, means certain sentence include words that suggest the existence of violence behavior. label = 0, indicates no violence or not sure whether there exists violence.
-3. Try to focus on "NLP_supervised learning.ipynb" first rather than other notebooks.
-4. "sampled_100_emotional_physical.xls" is the posts level coding example, add one colunm for yourself to annotate them based on your own judgement.
-5. "sampled_100_potentially_abuse.xls" is the sentence level coding example, add one colunm for yourself to annotate them based on your own judgement.
-7. The unsupervised learning methods applied the emotional and physical violence dataset (one post as the analyze unit).
-8. The supervised and CNN RNN applied the violence dataset (one sentence as the analyze unit).
-   Decision Tree Classifier (>85%) performs better than other algorithms. 
-
- 
- Notes:
- (1) potentially_abuse_V2.csv was mannually labeled through single sentence of subbredit "domesticviolence"
- (2) the role of a user uncovered from certain sentence was dropped.
