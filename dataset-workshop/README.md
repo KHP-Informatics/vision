@@ -35,24 +35,18 @@
 - We will classify sentences from the domestic violence subreddit, as either:
     - mentioning violence (label = 1) or
     - not mentioning violence (label = 0)
-- Our data (sentences) is in a CSV file, which can be opened in Excel (or edited directly in your web browser if you have a github account)
-- Open the file from the previoulsy downloaded zip file
+- We have already labelled some of the data
+- However, there are five portions that have not yet been labelled
+- You need to complete the labelling of these portions
+- Each of the five portions needs to be labelled by two independent people
+- We can then compare the labels to compute agreement
+- Our data (sentences) for labelling is in a CSV file, which can be opened in Excel or other swpreadsheet (or edited directly in your web browser if you have a github account)
+- Each person will be allocated a file to download and label
+- You can download your allocated file from this google drive: [files to download](XXX)
+- Open it in excel or some other spreadsheet
 - Read through it, adding a 1 or a 0 in column 1, according to whether you think the sentence mentions violence or not
+- When you have labelled it, save it as a CSV file, and email to [Lifang](mailto:lifang.li@kcl.ac.uk)
 
-
-- examples 1 to 800: sample-data-prepared.csv
-- examples 801 - 820 with label removed in sample-data-to-label-1A.csv
-- (each B file is a copy of the A file) sample-data-to-label-1B.csv
-- 821 - 840 sample-data-to-label-2A.csv
-- sample-data-to-label-2B.csv
-- 841 - 860 sample-data-to-label-3A.csv
-- sample-data-to-label-3B.csv
-- 861 - 880 sample-data-to-label-4A.csv
-- sample-data-to-label-4B.csv
-
-- code to calcualate IAAs on the A and B files for each set
-- code to combine all labelled datasets
-- code to do 80:20 split
 
 ### Presentations 2 - representing language
 
@@ -61,7 +55,7 @@
 ### Practical 2 - embeddings
 
 - We will run this as a demo, you do not need to do it themselvesrun this code yourself
-- [Embeddings (and how to use Colab)](./practicals/embeddings.ipynb)
+- [Embeddings (and how to use Colab)](https://githubtocolab.com/KHP-Informatics/vision/blob/main/dataset-workshop/practicals/embeddings.ipynb)
 
 ### Presentations 3 - supervised learning and the development cycle
 
@@ -70,7 +64,7 @@
 
 ### Practical 3 - supervised learning
 
-- [Practical notebook](./practicals/NLP_supervised_learning.ipynb)
+- [Practical notebook](https://githubtocolab.com/KHP-Informatics/vision/blob/main/dataset-workshop/practicals/NLP_supervised_learning.ipynb)
 
 ### Concluding and next steps
 
