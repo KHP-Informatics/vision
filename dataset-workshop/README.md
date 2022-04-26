@@ -70,7 +70,7 @@
 
 ### Practical 3 - supervised learning
 
-- [Practical notebook](./practicals/NLP_supervised learning.ipynb)
+- [Practical notebook](./practicals/NLP_supervised_learning.ipynb)
 
 ### Concluding and next steps
 
