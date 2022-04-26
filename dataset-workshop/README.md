@@ -23,7 +23,7 @@
 
 ### Presentations 1 - introduction to NLP
 
-- [TODO Introduction](./presentations/XX)
+- [Introduction](./presentations/01-nlp-intro.pdf)
 - [NLP methods](./presentations/02-nlp-methods.pdf)
 - [Steps in an NLP study, part A](./presentations/03-steps-in-an-nlp-study-A.pdf)
 - [Steps in an NLP study, part B](./presentations/04-steps-in-an-nlp-study-B.pdf)
@@ -61,17 +61,16 @@
 ### Practical 2 - embeddings
 
 - We will run this as a demo, you do not need to do it themselvesrun this code yourself
-- TODO short demonstration of how to run Python code notebooks, using Colab.
-- TODO - link to practical colab
+- [Embeddings (and how to use Colab)](./practicals/embeddings.ipynb)
 
 ### Presentations 3 - supervised learning and the development cycle
 
-- [Classification and sequence learning](06-classification-and-sequence-learning.pdf)
-- [The development cycle](07-development-cycle-and-evaluation.pdf)
+- [Classification and sequence learning](./presentations/06-classification-and-sequence-learning.pdf)
+- [The development cycle](./presentations/07-development-cycle-and-evaluation.pdf)
 
 ### Practical 3 - supervised learning
 
-- TODO link to practical colab
+- [Practical notebook](./practicals/NLP_supervised learning.ipynb)
 
 ### Concluding and next steps
 
