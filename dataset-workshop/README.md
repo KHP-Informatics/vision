@@ -42,7 +42,7 @@
 - We can then compare the labels to compute agreement
 - Our data (sentences) for labelling is in a CSV file, which can be opened in Excel or other swpreadsheet (or edited directly in your web browser if you have a github account)
 - Each person will be allocated a file to download and label
-- You can download your allocated file from this google drive: [files to download](XXX)
+- You can download your allocated file from this google drive: [files to download](https://drive.google.com/drive/folders/1cl2cjpyjwRD3Hl-3yor7N74wfK3FvBvR)
 - Open it in excel or some other spreadsheet
 - Read through it, adding a 1 or a 0 in column 1, according to whether you think the sentence mentions violence or not
 - When you have labelled it, save it as a CSV file, and email to [Lifang](mailto:lifang.li@kcl.ac.uk)
