@@ -23,10 +23,10 @@
 
 ### Presentations 1 - introduction to NLP
 
-[TODO Introduction](./presentations/XX)
-[NLP methods](./presentations/02-nlp-methods.pdf)
-[Steps in an NLP study, part A](./presentations/03-steps-in-an-nlp-study-A.pdf)
-[Steps in an NLP study, part B](./presentations/04-steps-in-an-nlp-study-B.pdf)
+- [TODO Introduction](./presentations/XX)
+- [NLP methods](./presentations/02-nlp-methods.pdf)
+- [Steps in an NLP study, part A](./presentations/03-steps-in-an-nlp-study-A.pdf)
+- [Steps in an NLP study, part B](./presentations/04-steps-in-an-nlp-study-B.pdf)
 
 
 ### Practical 1 - data labelling
@@ -56,29 +56,23 @@
 
 ### Presentations 2 - representing language
 
-[Representing language](./presentations/05-nlp-representation.pdf)
+- [Representing language](./presentations/05-nlp-representation.pdf)
 
 ### Practical 2 - embeddings
 
-We will run this as a demo, you do not need to do it themselvesrun this code yourself
-
-TODO short demonstration of how to run Python code notebooks, using Colab.
-
-TODO - link to practical colab
+- We will run this as a demo, you do not need to do it themselvesrun this code yourself
+- TODO short demonstration of how to run Python code notebooks, using Colab.
+- TODO - link to practical colab
 
 ### Presentations 3 - supervised learning and the development cycle
 
-[Classification and sequence learning](06-classification-and-sequence-learning.pdf)
-[Representing languageThe development cycle](07-development-cycle-and-evaluation.pdf)
+- [Classification and sequence learning](06-classification-and-sequence-learning.pdf)
+- [The development cycle](07-development-cycle-and-evaluation.pdf)
 
 ### Practical 3 - supervised learning
 
-- We will first split our data in to a training set and a test set
+- TODO link to practical colab
 
-TODO - code for above
-
-TODO - link to practical colab
-
-### Concluding abd next steps
+### Concluding and next steps
 
 
