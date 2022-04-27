@@ -54,7 +54,7 @@
 
 ### Practical 2 - embeddings
 
-- We will run this as a demo, you do not need to do it themselvesrun this code yourself
+- We will run this as a demo, you do not need to run this code yourself
 - [Embeddings (and how to use Colab)](https://githubtocolab.com/KHP-Informatics/vision/blob/main/dataset-workshop/practicals/embeddings.ipynb)
 
 ### Presentations 3 - supervised learning and the development cycle
