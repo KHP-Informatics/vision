@@ -1,7 +1,7 @@
 library(data.table)
 library(udpipe)
 ## Annotate text with parts of speech tags
-data <- read.csv("/Users/lilifang/KCL/KCL_Angus/RE-STAR-Angus-Susie/All interviewees responses_withoutNONE_updatedV11_with_BTM.csv",header=TRUE,sep=",",na.strings = NULL)
+data <- read.csv("/Users/lilifang/KCL/KCL_Angus/RE-STAR-Angus-Susie/All interviewees responses_withoutNONE_updatedV14_with_BTM_b.csv",header=TRUE,sep=",",na.strings = NULL)
 #data <- data[0:1000,]
 data<- data[, c("ids", "new_response")]
 dim(data)
