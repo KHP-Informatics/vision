@@ -27,7 +27,7 @@ model     <- BTM(traindata, biterms = biterms, k = 10, iter = 500, background = 
 library(textplot)
 library(ggraph)
 plot(model, top_n = 20,
-     title = "BTM model", subtitle = "ASD, ADHD, ASD.ADHD reviewer responses",
+     title = "BTM model", subtitle = "ASD, ADHD, ASD.ADHD",
      labels = c("Topic 0","Topic 1", "Topic 2", "Topic 3", 
                 "Topic 4", "Topic 5", 
                 "Topic 6", "Topic 7",
