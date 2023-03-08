@@ -1,65 +1,65 @@
-## Get list of packages in the NLP/Machine Learning Task Views
-# https://www.r-bloggers.com/2020/04/biterm-topic-modelling-for-short-texts/  
-## Get list of packages in the NLP/Machine Learning Task Views
-
-#install.packages(“tidyverse”)
-#install.packages("data.table")
-
 library(data.table)
 library(udpipe)
 ## Annotate text with parts of speech tags
-data <- read.csv("/Users/lilifang/KCL/KCL_Angus/RE-STAR-Angus-Susie/all_respones_for_all_interviewees_respones_LIWC_words_V2.csv",header=TRUE,sep=",",na.strings = NULL)
-data <- data[, c("ids", "response")]
+data <- read.csv("/Users/lilifang/KCL/KCL_Angus/RE-STAR-Angus-Susie/All interviewees responses_withoutNONE_updatedV11_with_BTM.csv",header=TRUE,sep=",",na.strings = NULL)
+#data <- data[0:1000,]
+data<- data[, c("ids", "new_response")]
+dim(data)
+data<- data[1:13435,]
+#head(data, n = 5)
+anno <- data.frame(doc_id = data$ids, text = data$new_response, stringsAsFactors = FALSE)
+anno <- udpipe(anno, "english", trace = 500)
+
+
+
+# ctrl+shift+C
+# biterms <- as.data.table(anno)
+# biterms <- biterms[, cooccurrence(x = lemma,
+#                                   relevant = upos %in% c("NOUN", "ADJ", "VERB") & nchar(lemma) > 2 & !lemma %in% stopwords("en"), #
+#                                   skipgram = 3),
+#                    by = list(doc_id)]
+# 
+# library(BTM)
+# set.seed(123456)
+# traindata <- subset(anno,  upos %in% c("NOUN", "ADJ", "VERB") & !lemma %in% stopwords("en") & nchar(lemma) > 2) # 
+# traindata <- traindata[, c("doc_id", "lemma")]
+# model4     <- BTM(traindata, biterms = biterms, k = 9, iter = 2000, background = TRUE, trace = 100)
+# 
+# library(textplot)
+# library(ggraph)
+# plot(model4, top_n = 15,
+#      title = "BTM model", subtitle = "ASD, ADHD, ASD.ADHD reviewer responses",
+#      labels = c("Topic 1", "Topic 2", "Topic 3", 
+#                 "Topic 4", "Topic 5", 
+#                 "Topic 6", "Topic 7",
+#                 "Topic 8", "Topic 9")) # ,"Topic 10"
+
+
+
+biterms <- as.data.table(anno)
+biterms <- biterms[, cooccurrence(x = lemma,
+                                  relevant =  nchar(lemma) > 2 & !lemma %in% stopwords("en"), #upos %in% c("NOUN", "ADJ", "VERB") &
+                                  skipgram = 3),
+                   by = list(doc_id)]
+
+library(BTM)
+set.seed(1234)
+traindata <- subset(anno,  !lemma %in% stopwords("en") & nchar(lemma) > 2) # upos %in% c("NOUN", "ADJ", "VERB") &
+traindata <- traindata[, c("doc_id", "lemma")]
+model     <- BTM(traindata, biterms = biterms, k = 10, iter = 500, background = TRUE, trace = 100)
+
+library(textplot)
+library(ggraph)
+plot(model, top_n = 20,
+     title = "BTM model", subtitle = "ASD, ADHD, ASD.ADHD reviewer responses",
+     labels = c("Topic 0","Topic 1", "Topic 2", "Topic 3", 
+                "Topic 4", "Topic 5", 
+                "Topic 6", "Topic 7",
+                "Topic 8", "Topic 9","Topic 10"))
+
 library(tidyverse)
 data <- drop_na(data)
 dim(data)
 
-anno <- data.frame(doc_id = data$ids, text = data$response, stringsAsFactors = FALSE)
-anno <- udpipe(anno, "english", trace = 100)
-colnames(anno) 
-head(anno)
-
-
-biterms <- as.data.table(anno)
-colnames(biterms)
-head(biterms)
-
-biterms <- biterms[, cooccurrence(x = lemma,
-                                   relevant = upos %in% c("NOUN", "ADJ", "VERB") & 
-                                     nchar(lemma) > 2 & !lemma %in% stopwords("en"),
-                                   skipgram = 3),
-                    by = list(doc_id)]
-library(BTM)
-library(udpipe)
-library(data.table)
-library(stopwords)
-set.seed(123456)
-traindata <- subset(anno, upos %in% c("NOUN", "ADJ", "VERB") & !lemma %in% stopwords("en") & nchar(lemma) > 2)
-head(traindata)
-dim(traindata)
-traindata <- traindata[, c("doc_id","lemma")]
-traindata$lemma <- na.omit(traindata$lemma)
-dim(traindata)
-# Subset biterms to include only terms that are present in traindata
-biterms_clean <- na.omit(biterms)
-dim(biterms_clean)
-# Train the BTM model using the subsetted biterms
-model1 <- BTM(traindata, biterms = biterms_clean, k = 10, iter = 2000, background = TRUE, trace = 100)
-
-
-## Inspect the model - topic frequency + conditional term probabilities
-model1$theta
-
-topicterms <- terms(model1, top_n = 15)
+topicterms <- terms(model, top_n = 20)
 topicterms
-
-library(openxlsx)
-path = "/Users/lilifang/KCL/KCL_Angus/RE-STAR-Angus-Susie/R-plots/"
-write.xlsx(topicterms, paste0(path, "topicterms.xlsx"))
-
-#install.packages("textplot")
-library(textplot)
-library(ggraph)
-plot(model1, top_n = 15,
-     title = "BTM model")
-
