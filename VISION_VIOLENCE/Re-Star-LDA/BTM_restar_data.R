@@ -12,30 +12,6 @@ anno <- udpipe(anno, "english", trace = 500)
 
 
 
-# ctrl+shift+C
-# biterms <- as.data.table(anno)
-# biterms <- biterms[, cooccurrence(x = lemma,
-#                                   relevant = upos %in% c("NOUN", "ADJ", "VERB") & nchar(lemma) > 2 & !lemma %in% stopwords("en"), #
-#                                   skipgram = 3),
-#                    by = list(doc_id)]
-# 
-# library(BTM)
-# set.seed(123456)
-# traindata <- subset(anno,  upos %in% c("NOUN", "ADJ", "VERB") & !lemma %in% stopwords("en") & nchar(lemma) > 2) # 
-# traindata <- traindata[, c("doc_id", "lemma")]
-# model4     <- BTM(traindata, biterms = biterms, k = 9, iter = 2000, background = TRUE, trace = 100)
-# 
-# library(textplot)
-# library(ggraph)
-# plot(model4, top_n = 15,
-#      title = "BTM model", subtitle = "ASD, ADHD, ASD.ADHD reviewer responses",
-#      labels = c("Topic 1", "Topic 2", "Topic 3", 
-#                 "Topic 4", "Topic 5", 
-#                 "Topic 6", "Topic 7",
-#                 "Topic 8", "Topic 9")) # ,"Topic 10"
-
-
-
 biterms <- as.data.table(anno)
 biterms <- biterms[, cooccurrence(x = lemma,
                                   relevant =  nchar(lemma) > 2 & !lemma %in% stopwords("en"), #upos %in% c("NOUN", "ADJ", "VERB") &
