@@ -22,7 +22,7 @@ stop_words <- stopwords("english")
 
 
 
-data <- read.csv("/Users/lilifang/KCL/KCL_Angus/RE-STAR-Angus-Susie/All interviewees responses and the corresponding representative words_withoutNONE_updatedV14.csv",header=TRUE,sep=",",na.strings = NULL)
+data <- read.csv("/Users/lilifang/KCL/KCL_Angus/RE-STAR-Angus-Susie/All interviewees responses and the corresponding representative words_withoutNONE_updatedV17.csv",header=TRUE,sep=",",na.strings = NULL)
 summary(data)
 dim(data)
 #removing the pattern indicating a line break
